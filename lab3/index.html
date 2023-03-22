@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>the face maker</title>
+
+<link rel="stylesheet" type="text/css" href="cssStyle4Faces.css">
+</head>
+
+<body>
+
+<h1> go ahead. make yourself a face</h1>
+
+<div class="midBorder">
+<br>
+
+</div>
+
+
+<div class="container">
+
+
+ 
+<div class="item2"> <!-- the one on the left -->
+
+	<div class="inAline">
+
+	<div class="inside">
+		<img class="arrowEyes" src="htmlFaces/arrowPointLeft.png" alt = "an arrow that points to the left">
+		<button onclick=eyesButton() class="btnEyesL">Button</button>
+	</div>
+	<div class="inside">		
+		<img class="arrowEars" src="htmlFaces/arrowPointLeft.png" alt = "an arrow that points to the left">
+		<button onclick=earsButton() class="btnEarsL">Button</button>
+	</div>
+	<div class="inside">		
+		<img class="arrowNose" src="htmlFaces/arrowPointLeft.png" alt = "an arrow that points to the left">
+		<button onclick=noseButton() class="btnNoseL">Button</button>
+	</div>
+	<div class="inside">		
+		<img class="arrowMouth" src="htmlFaces/arrowPointLeft.png" alt = "an arrow that points to the left">
+		<button onclick=mouthButton() class="btnMouthL">Button</button>
+	</div>
+	<div class="inside">		
+		<img class="arrowColor" src="htmlFaces/arrowPointLeft.png" alt = "an arrow that points to the left">
+		<button onclick=colorButton() class="btnColorL">Button</button>
+	</div>
+	</div>
+</div>
+
+
+
+
+
+	<div class="item"> <!-- the face !!! -->
+		<div class="facecontainer">
+		
+<img class="faceoverlap" src="htmlFaces/faceColors/faceColorGreen.png" id = "faceColorGreen" alt = "a green circle">
+<img class="faceoverlap" src="htmlFaces/ears/earsWeird.png" id = "earsWeird" alt = "a pair of cartoon ears">
+<img class="faceoverlap" src="htmlFaces/nose/noseBasic.png" id = "noseBasic" alt = "a cartoon nose">
+<img class="faceoverlap" src="htmlFaces/mouths/mouthSmile.png" id = "mouthSmile" alt = "a cartoon mouth">
+<img class="faceoverlap" src="htmlFaces/eyes/eyesCircles.png" id = "eyesCircles" alt = "a pair of cartoon eyes">
+
+
+<img class="faceoverlap" src="htmlFaces/face.png"  alt = "a circle">
+		</div>
+	</div>
+
+
+<div class="item3"> <!-- the right arrows!!! -->
+
+	<div class="inAline">
+
+<div class="inside">
+		<img class="arrowEyes" src="htmlFaces/arrow.png" alt = "an arrow that points to the right">
+		<button onclick=eyesButtonR() class="btnEyes">Button</button>
+</div>
+<div class="inside">		
+		<img class="arrowEars" src="htmlFaces/arrow.png" alt = "an arrow that points to the right">
+		<button onclick=earsButtonR() class="btnEars">Button</button>
+</div>
+<div class="inside">		
+		<img class="arrowNose" src="htmlFaces/arrow.png" alt = "an arrow that points to the right">
+		<button onclick=noseButtonR() class="btnNose">Button</button>
+</div>
+<div class="inside">		
+		<img class="arrowMouth" src="htmlFaces/arrow.png" alt = "an arrow that points to the right">
+		<button onclick=mouthButtonR() class="btnMouth">Button</button>
+</div>
+<div class="inside">		
+		<img class="arrowColor" src="htmlFaces/arrow.png" alt = "an arrow that points to the right">
+		<button onclick=colorButtonR() class="btnColor">Button</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+<script>
+
+var eyes = document.getElementById('eyesCircles');
+var ears = document.getElementById('earsWeird');
+var nose = document.getElementById('noseBasic');
+var mouth = document.getElementById('mouthSmile');
+var faceColor = document.getElementById('faceColorGreen');
+
+
+
+var eyesArray = ["htmlFaces/eyes/eyesCircles.png", "htmlFaces/eyes/eyesCarrots.png", "htmlFaces/eyes/eyesD.png", "htmlFaces/eyes/eyesFlat.png", "htmlFaces/eyes/eyesIamNotLooking.png", "htmlFaces/eyes/eyesRaindrops.png"];
+var eyesIndex = 0;
+
+var earsArray = ["htmlFaces/ears/earsWeird.png", "htmlFaces/ears/earsExclamations.png", "htmlFaces/ears/earsDots.png"];
+var earsIndex = 0;
+
+var noseArray = ["htmlFaces/nose/noseBasic.png", "htmlFaces/nose/noseAlligator.png", "htmlFaces/nose/noseLong.png", "htmlFaces/nose/noseNostrils.png"];
+var noseIndex = 0;
+
+var mouthArray = ["htmlFaces/mouths/mouthSmile.png", "htmlFaces/mouths/mouthD.png", "htmlFaces/mouths/mouthFrown.png", "htmlFaces/mouths/mouthHighSquiggle.png", "htmlFaces/mouths/mouthLowCirlce.png", "htmlFaces/mouths/mouthLowSquiggle.png"];
+var mouthIndex = 0;
+
+var faceColorArray = ["htmlFaces/faceColors/faceColorGreen.png", "htmlFaces/faceColors/faceColorWhite.png"];
+var faceColorIndex = 0;
+var isGreen = 1;
+var isWhite = 0;
+
+var switchSound = new Audio("audio/choice.mp3");
+
+
+function eyesButton()
+{
+
+switchSound.play();
+eyesIndex++;
+eyes.setAttribute("src", eyesArray[eyesIndex]);
+if (eyesIndex > 4) {eyesIndex = -1;}
+
+}
+
+
+
+/*
+function eyesButton()
+{
+	changeEyesRight();
+	switchSound.play();
+}
+*/
+
+function earsButton()
+{
+
+switchSound.play();
+earsIndex++;
+ears.setAttribute("src", earsArray[earsIndex]);
+if (earsIndex > 1) {earsIndex = -1;}
+
+}
+
+function noseButton()
+{
+	switchSound.play();
+noseIndex++;
+nose.setAttribute("src", noseArray[noseIndex]);
+if (noseIndex > 2) {noseIndex = -1;}
+
+}
+
+function mouthButton()
+{
+	switchSound.play();
+switchSound.play();
+mouthIndex++;
+mouth.setAttribute("src", mouthArray[mouthIndex]);
+if (mouthIndex > 4) {mouthIndex = -1;}
+
+}
+
+
+function colorButton(){
+
+switchSound.play();
+faceColorIndex++;
+faceColor.setAttribute("src", faceColorArray[faceColorIndex]);
+if (faceColorIndex > 0) {faceColorIndex = -1;}
+	}
+	
+	/*
+faceColorIndex++;
+faceColor.setAttribute("src", faceColorArray[faceColorIndex]);
+if (faceColorIndex > 1) {faceColorIndex = -1;}
+*/
+
+
+
+
+
+
+
+function eyesButtonR() /* this took me three hours because i forgot == is for checking and = is declarative thank you javascript*/
+{
+switchSound.play();
+eyesIndex = eyesIndex - 1;
+if (eyesIndex == -1) {eyesIndex = 4}
+eyes.setAttribute("src", eyesArray[eyesIndex]);
+
+
+}
+
+
+function earsButtonR()
+{
+	switchSound.play();
+	earsIndex = earsIndex - 1;
+if (earsIndex == -1) {earsIndex = 2}
+ears.setAttribute("src", earsArray[earsIndex]);
+}
+
+function noseButtonR()
+{
+	switchSound.play();
+	noseIndex = noseIndex - 1;
+if (noseIndex == -1) {noseIndex = 3}
+nose.setAttribute("src", noseArray[noseIndex]);
+}
+
+function mouthButtonR()
+{
+	switchSound.play();
+		mouthIndex = mouthIndex - 1;
+if (mouthIndex == -1) {mouthIndex = 5}
+mouth.setAttribute("src", mouthArray[mouthIndex]);
+}
+
+function colorButtonR()
+{
+switchSound.play();
+		faceColorIndex = faceColorIndex - 1;
+if (faceColorIndex == -1) {faceColorIndex = 1}
+
+faceColor.setAttribute("src", faceColorArray[faceColorIndex]);
+
+
+/*
+if (faceColorIndex == 1) {faceColorIndex = 0};
+if (faceColorIndex == 0) {faceColorIndex = 1};
+faceColor.setAttribute("src", faceColorArray[faceColorIndex]);
+	*/
+}
+
+
+
+</script>
+
+
+</body>
+</html>

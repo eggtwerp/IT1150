@@ -1,0 +1,239 @@
+*{box-sizing: border-box;}
+
+body{
+background-color: black;
+}
+
+h1
+{
+text-align: center;
+color: #00FF41;
+}
+.btnEyes {
+  position: absolute;
+  top: -7px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+.btnEars {
+  position: absolute;
+  top: 85px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+.btnNose {
+  position: absolute;
+  top: 173px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+.btnMouth {
+  position: absolute;
+  top: 260px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+.btnColor {
+  position: absolute;
+  top: 345px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+
+.btnEyesL {
+  position: absolute;
+  top: -7px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+.btnEarsL {
+  position: absolute;
+  top: 85px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+.btnNoseL {
+  position: absolute;
+  top: 173px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+.btnMouthL {
+  position: absolute;
+  top: 260px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+.btnColorL {
+  position: absolute;
+  top: 345px;
+  left: -10px;
+  background-color: transparent;
+  color: transparent;
+  padding: 11px 6px;
+  cursor: pointer;
+}
+
+
+
+
+.phppot-container {
+	align-items: center;
+align: center;}
+
+
+.container {
+   display: flex;/* or inline-flex */
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.item {
+  order: 1; /* default is 0 */
+}
+
+.item2 {
+  order: 1; /* default is 0 */
+ position: relative;
+  top: 10px;
+  right: 0;
+  left: 40px;
+  width: 6%;
+}
+
+.item3 {
+  order: 1; /* default is 0 */
+ position: relative;
+  top: 10px;
+  right: 0;
+  left: 33px;
+  width: 6%;
+}
+
+
+.inAline{
+	 display: flex;
+flex-direction: column;
+align-content: space-evenly;
+gap: 50px;
+	}
+
+.inside{
+order: 1;
+column-gap: 20px;
+}
+
+.faceoverlap
+{
+position: absolute;
+top: 0px;
+left: 0px;
+
+width: 500px;
+
+float: center;
+}
+
+.facecontainer
+{
+float: center;	
+position: relative;
+height: 500px;
+width: 500px;
+
+border: solid #008F11 4px;
+background-color: #003B00;
+}
+
+
+/*
+.arrowLeft 
+{
+
+
+}
+
+.arrowRight
+{
+
+}
+
+
+
+*/
+
+.arrowEyes{
+	width: 30%;
+	order: 1;
+	
+	column-gap: 20px;
+	
+}
+
+.arrowEars{
+width: 30%;
+order: 1;
+column-gap: 20px;
+}
+
+.arrowNose
+{width: 30%;
+column-gap: 20px;
+order: 1;}
+
+.arrowMouth
+{width: 30%;
+order: 1;
+column-gap: 20px;
+}
+.arrowColor
+{width: 30%;
+order: 1;
+column-gap: 20px;
+}
