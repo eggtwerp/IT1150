@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<link rel="stylesheet" href="cssStyle4oldHill.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Old Hill, KY | Official Website</title>
+<link rel="icon" type="image/x-icon" href="images/oldhill.ico">
+
+</head>
+
+
+
+<body>
+
+<nav class="container1">
+
+	<nav class="nav">
+		<nav class="item2">
+		<img onclick="window.location.href='index.html';"	src="images/oldhillflag.jpg" alt="Old Hill Logo">
+		</nav>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='government.html';">Government</button>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='services.html';">Services</button>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='communityEvents.html';">Community Events</button>
+	</nav>
+
+</nav>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/ss2.jpg" style="width:100%" alt="Old Hill's Natural Beauty">
+  <div class="text">Old Hill's Natural Beauty</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/ss3.jpg" style="width:100%" alt = "Old Hill Town Hall">
+  <div class="text">Old Hill Town Hall</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/ss0.jpg" style="width:100%" alt="Old Hill's Oldest Building">
+  <div class="text">Old Hill's Oldest Building</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="images/ss1.jpg" style="width:100%" alt="The Cassaway River">
+  <div class="text">The Cassaway River</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="images/ss-1.jpg" style="width:100%" alt="Old Hill Main Street">
+  <div class="text">Old Hill Main Street</div>
+</div>
+
+</div>
+<br>
+
+<article style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>  
+</article>
+
+<article class="col-12" style= "position: relative;">
+<article class = "welcome"> Welcome to Old Hill! </article>
+<article class = "welcome"> Why don't you <b>stay a while?</b></article>
+</article>
+
+<footer class="footerWrapper">
+<div class="footer1">
+
+<img class="footLogo" src="images/OLDHILLFLAG2.png" alt="Old Hill Logo"> 
+
+<p class="footText" > Celebrate Tradition. Protect Tradition. </p>
+
+</div>
+</footer>
+
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+
+
+
+
+
+</body>
+
+</html> 

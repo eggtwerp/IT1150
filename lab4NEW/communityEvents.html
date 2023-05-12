@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+<link rel="stylesheet" href="cssStyle4oldHill.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Community Events | Old Hill, KY</title>
+<link rel="icon" type="image/x-icon" href="images/oldhill.ico">
+
+<style>
+
+
+img {
+width: 100%;
+
+}
+
+*{
+	
+box-sizing: border-box;
+	
+  background-position: center;
+}
+
+.fade-in{
+  -webkit-animation: fade-in 2s ease;
+  -moz-animation: fade-in ease-in-out 2s both;
+  -ms-animation: fade-in ease-in-out 2s both;
+  -o-animation: fade-in ease-in-out 2s both;
+  animation: fade-in 2s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+
+
+.p { 
+text-align: left;
+}
+
+	.square {
+  min-height: 750px;
+  min-width: 50px;
+  background-color: #ffffff;
+  top: 400px;
+  left: 150px;
+  z-index: 10;
+  border-style: solid; 
+box-sizing: border-box;
+    padding: 10px;
+  width: 66.66%;
+       position: absolute;
+	   margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+  margin: 0 auto;
+}
+	
+	
+
+.footer {
+  background-color: #215d5a;
+  height: 200px;
+  position: absolute;
+  top:600px;
+  width: 100%;}
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+
+
+<nav class="container1">
+
+	<nav class="nav">
+		<nav class="item2">
+		<img onclick="window.location.href='index.html';"	src="images/oldhillflag.jpg" alt = "Old Hill Logo">
+		</nav>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='government.html';">Government</button>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='services.html';">Services</button>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='communityEvents.html';">Community Events</button>
+	</nav>
+
+</nav>
+
+
+
+
+
+<div id="banner-load">
+
+
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+<script>
+
+//Add your images, we'll set the path in the next step
+    var images = ['images/Document1.jpg','images/Document2.jpg', 'images/Document3.jpg', 'images/Document4.jpg', 'images/Document5.jpg', 'images/Document6.jpg', 'images/Document7.jpg'];
+
+    
+//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+    $('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+</script>
+
+
+
+<section class="square">
+
+<h1 style="color: #326964;"> Community </h1>
+<p style="text-align: left;"> Whether you have called Old Hill home your entire life or have just moved, we welcome you and are thankful you have chosen this place to call home. Committed to providing beneficial city services we will provide for your needs: superior safety forces, a lively senior center, and fitness programs for all ages at our recreation center.</p>
+
+<p style="text-align: left;"> Our City has always been a place where neighbors know neighbors and come together for the benefit of the community.</p>
+
+<h3 style="text-align: left;"><a href="">Community Events</a></h3>
+
+<p style="text-align: left;">Stay up to date by accessing calendars to view upcoming events in the City of Old Hill.</p>
+
+<h3 style="text-align: left;"><a href="">Planning and Zoning Code</a></h3>
+<p style="text-align: left;">This website is for the planning and zoning code update
+
+<h3 style="text-align: left;"><a href="">Community News</a></h3>
+<p style="text-align: left;">Read current City news and announcements.
+
+<h3 style="text-align: left;"><a href="">Good Neighbor Guide (PDF)</a></h3>
+<p style="text-align: left;">Discover the City of Old Hill with a helpful guide providing important community information.
+
+<h3 style="text-align: left;"><a href="potr.html">The Protecterate of the Red Sun</a></h3>
+<p style="text-align: left;">Take a tour of the facility after sundown, and learn how Old Hill has been kept so safe for so long.
+
+<h3 style="text-align: left;"><a href="">News Letter</a></h3>
+<p style="text-align: left;">Access the current and past editions of Old Hill News, the City of Old Hill's newsletter.
+
+<h3 style="text-align: left;"><a href="">Notifications</a></h3>
+<p style="text-align: left;">Use our Notify Me system to receive emails from the City about the things that are important to you.
+
+
+
+
+</section>
+
+
+<footer class="footerWrapper">
+<div class="footer">
+
+<img class="footLogo" src="images/OLDHILLFLAG2.png" alt = "Old Hill Logo"> 
+
+<p class="footText" > Celebrate Tradition. Protect Tradition. </p>
+
+</div>
+</footer>
+
+
+</body>
+
+
+
+</html>

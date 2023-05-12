@@ -1,0 +1,319 @@
+*{
+	
+box-sizing: border-box;
+	
+
+  background-repeat: no-repeat;
+  background-size: 2px 2px;
+  background-attachment: fixed;
+  background-position: center; 
+
+}
+
+.background {
+	
+  background: "images/sasas";
+	 background-repeat: no-repeat;
+  background-size: 2px 2px;
+  background-attachment: fixed;
+  background-position: center; 
+
+}
+/*
+@import url(https://fonts.googleapis.com/css?family=Trirong;
+
+body {
+  font-family: "Trirong", serif;
+}
+*/
+
+
+/* grid layout */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /*border: 1px solid red;*/
+}
+
+
+/* NAV BAR */
+.nav {
+cursor: pointer; 
+box-sizing: border-box;
+
+}
+
+
+/* BG img for side pages */
+
+.bgImgSS{
+width: 100%;
+
+	
+  background: "images/sasas";
+	 background-repeat: no-repeat;
+  background-size: 2px 2px;
+  background-attachment: fixed;
+  background-position: center; 
+
+	
+}
+
+/* BUTTON 
+Middle English: from Old French bouton, of Germanic origin and related to butt.
+ */
+.button {
+  transition-duration: 0.2s;
+  background-color: transparent;
+  border: none;
+  color: #006473;
+  padding: 30px 60px;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  margin: 5px 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+}
+
+.container1 {border: 1px solid #a0d060;
+  display: flex; /* or inline-flex */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+
+}
+
+.item1 {
+	
+	
+}
+
+.item1:hover .button{
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	    background-color: #2e717a;
+		color: white;
+		text-decoration: underline;
+	
+}
+
+
+.item2{
+	
+}
+  
+  
+
+
+
+/*
+.navButton {
+	
+  position: absolute;
+  left: 50%;
+  top: 05%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    box-sizing: border-box;
+	
+}
+*/
+
+
+
+
+
+/* welcome splash*/
+.welcome {
+	color: #2e717a;
+	width: 100%;
+	font-size: 85px;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	
+	
+}
+
+
+
+
+/* for the slideshow */
+
+* {box-sizing: border-box;}
+
+
+body {font-family: Verdana, sans-serif;
+
+
+	
+	background-size: 2px 2px;
+  background-attachment: fixed;
+  background-position: center; 
+  
+  
+  margin: 0;
+     padding: 0;
+     min-height: 100vh;
+}
+
+
+/* squares for THE ACTUAL PAGE extra */
+
+	.square {
+  min-height: 1150px;
+  min-width: 50px;
+  background-color: #ffffff;
+  top: 400px;
+  left: 150px;
+  z-index: 10;
+  border-style: solid; 
+box-sizing: border-box;
+    padding: 10px;
+  width: 66.66%;
+       position: absolute;
+	   margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+  margin: 0 auto;
+}
+	
+	
+.footerWrapper {
+	
+	position:relative;
+	
+}
+	.footer1 {
+  
+  background-color: #215d5a;
+  height: 200px;
+  position: absolute;
+  top:300px;
+
+ width: 100%;
+
+
+
+}
+	
+	
+	
+.footLogo{
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+width:30%;
+
+
+}
+
+.footText{	
+position: relative;
+margin: 0 auto;
+color:#FFFFFF; 
+text-align:center;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.footText1{	
+
+left: 750px;
+bottom: 0;
+margin: 0 auto;
+color:#ffffff; 
+position: ;
+}
+
+  .main {
+     flex-grow: 1;
+     background-color: pink;
+    }
+	
+	
+	
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width:100%;
+  position: relative;
+  margin: left;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+  .container {  justify-content: center;
+  position:fixed;
+  top:0;}
+  }

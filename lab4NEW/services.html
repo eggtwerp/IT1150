@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+<link rel="stylesheet" href="cssStyle4oldHill.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Services | Old Hill, KY</title>
+<link rel="icon" type="image/x-icon" href="images/oldhill.ico">
+
+
+
+<style>
+
+
+img {
+width: 100%;
+
+}
+
+*{
+	
+box-sizing: border-box;
+	
+  background-position: center;}
+
+.fade-in{
+  -webkit-animation: fade-in 2s ease;
+  -moz-animation: fade-in ease-in-out 2s both;
+  -ms-animation: fade-in ease-in-out 2s both;
+  -o-animation: fade-in ease-in-out 2s both;
+  animation: fade-in 2s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+
+
+.p { 
+text-align: left;
+}
+
+.square {
+  min-height: 750px;
+  min-width: 50px;
+  background-color: #ffffff;
+  top: 400px;
+  left: 150px;
+  z-index: 10;
+  border-style: solid; 
+box-sizing: border-box;
+    padding: 10px;
+  width: 66.66%;
+       position: absolute;
+	   margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+  margin: 0 auto;
+}
+
+
+.footer {
+  
+  background-color: #215d5a;
+  height: 200px;
+  position: absolute;
+  top:600px;
+
+ width: 100%;
+
+
+
+}
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+
+
+<nav class="container1">
+
+	<nav class="nav">
+		<nav class="item2">
+		<img onclick="window.location.href='index.html';"	src="images/oldhillflag.jpg" alt = "Old Hil Flag">
+		</nav>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='government.html';">Government</button>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='services.html';">Services</button>
+	</nav>
+
+	<nav class="item1">
+		<button class="button" onclick="window.location.href='communityEvents.html';">Community Events</button>
+	</nav>
+
+</nav>
+
+
+
+
+
+<div id="banner-load">
+
+
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+<script>
+
+//Add your images, we'll set the path in the next step
+    var images = ['images/Document1.jpg','images/Document2.jpg', 'images/Document3.jpg', 'images/Document4.jpg', 'images/Document5.jpg', 'images/Document6.jpg', 'images/Document7.jpg'];
+
+    
+//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+    $('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+</script>
+
+
+
+<section class="square">
+
+<h1 style="color: #326964;"> Services </h1>
+<h3 style="text-align: left;"><a href="">Alerts</a></h3>
+
+<p style="text-align: left;">Sign up to receive announcements of important information (e.g., warnings of natural disasters) sent to you through email or text message.</p>
+
+<h3 style="text-align: left;"><a href="">Animal Control</a></h3>
+<p style="text-align: left;">Discover the animal control services of the City of Old Hill and find some answers to commonly asked animal control and care questions.
+
+<h3 style="text-align: left;"><a href="">Business</a></h3>
+<p style="text-align: left;">Access important economic development resources for businesses.
+
+<h3 style="text-align: left;"><a href="">Perscription Drug Drop Box (PDF)</a></h3>
+<p style="text-align: left;">Pills left unattended in a bathroom or medicine cabinet can be easily taken and misused. Please utilize the Old Hill Police Department’s Prescription Drug Drop Box Program to keep your loved ones safe.
+
+<h3 style="text-align: left;"><a href="">Public Records</a></h3>
+<p style="text-align: left;">The City of Old Hill is committed to providing public information in an accessible, timely way.
+
+<h3 style="text-align: left;"><a href="">Report a Concern</a></h3>
+<p style="text-align: left;">Notify us about concerns such as downed trees, potholes, problem intersections, etc.
+
+<h3 style="text-align: left;"><a href="">Room Rentals</a></h3>
+<p style="text-align: left;">Learn more about renting the Fire Station Community Room and the Community Center spaces available in the City of Old Hill.
+
+<h3 style="text-align: left;"><a href="potr.html">The Protecterate of the Red Sun</a></h3>
+<p style="text-align: left;">Serve your neighbors and keep your loved ones safe. Inquire for available robe sizes.
+
+
+
+</section>
+
+
+<footer class="footerWrapper">
+<div class="footer">
+
+<img class="footLogo" src="images/OLDHILLFLAG2.png" alt= "Old Hill Logo"> 
+
+<p class="footText" > Celebrate Tradition. Protect Tradition. </p>
+
+</div>
+</footer>
+
+
+</body>
+
+
+
+</html>
+
+
